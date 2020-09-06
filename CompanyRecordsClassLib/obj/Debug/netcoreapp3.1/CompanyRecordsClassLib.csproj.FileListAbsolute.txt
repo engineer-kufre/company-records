@@ -1,0 +1,9 @@
+C:\Users\Kufreabasi Ita\Desktop\Coding\Decagon Training\Tasks\CompanyRecordsApp\CompanyRecordsClassLib\bin\Debug\netcoreapp3.1\CompanyRecordsClassLib.deps.json
+C:\Users\Kufreabasi Ita\Desktop\Coding\Decagon Training\Tasks\CompanyRecordsApp\CompanyRecordsClassLib\bin\Debug\netcoreapp3.1\CompanyRecordsClassLib.dll
+C:\Users\Kufreabasi Ita\Desktop\Coding\Decagon Training\Tasks\CompanyRecordsApp\CompanyRecordsClassLib\obj\Debug\netcoreapp3.1\CompanyRecordsClassLib.csprojAssemblyReference.cache
+C:\Users\Kufreabasi Ita\Desktop\Coding\Decagon Training\Tasks\CompanyRecordsApp\CompanyRecordsClassLib\obj\Debug\netcoreapp3.1\CompanyRecordsClassLib.AssemblyInfoInputs.cache
+C:\Users\Kufreabasi Ita\Desktop\Coding\Decagon Training\Tasks\CompanyRecordsApp\CompanyRecordsClassLib\obj\Debug\netcoreapp3.1\CompanyRecordsClassLib.AssemblyInfo.cs
+C:\Users\Kufreabasi Ita\Desktop\Coding\Decagon Training\Tasks\CompanyRecordsApp\CompanyRecordsClassLib\obj\Debug\netcoreapp3.1\CompanyRecordsClassLib.csproj.CoreCompileInputs.cache
+C:\Users\Kufreabasi Ita\Desktop\Coding\Decagon Training\Tasks\CompanyRecordsApp\CompanyRecordsClassLib\bin\Debug\netcoreapp3.1\CompanyRecordsClassLib.pdb
+C:\Users\Kufreabasi Ita\Desktop\Coding\Decagon Training\Tasks\CompanyRecordsApp\CompanyRecordsClassLib\obj\Debug\netcoreapp3.1\CompanyRecordsClassLib.dll
+C:\Users\Kufreabasi Ita\Desktop\Coding\Decagon Training\Tasks\CompanyRecordsApp\CompanyRecordsClassLib\obj\Debug\netcoreapp3.1\CompanyRecordsClassLib.pdb
