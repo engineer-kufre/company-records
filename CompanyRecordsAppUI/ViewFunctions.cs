@@ -38,5 +38,11 @@ namespace CompanyRecordsAppUI
             var resultList = Operations.AllEmployeesAndDepartmentNames();
             employeesAndDepartmentsDataGridView.DataSource = resultList;
         }
+
+        private void employeesGrpByDepartmentsButton_Click(object sender, EventArgs e)
+        {
+            var resultList = Operations.AllEmployeesGroupedByDepartment();
+            employeesGrpByDepartmentsDataGridView.DataSource = resultList;
+        }
     }
 }

@@ -33,17 +33,17 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
+            this.employeesGrpByDepartmentsButton = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.employeesAndDepartmentsButton = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
             this.listBox4 = new System.Windows.Forms.ListBox();
             this.employeesEarningOverDataGridView = new System.Windows.Forms.DataGridView();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.employeesGrpByDepartmentsDataGridView = new System.Windows.Forms.DataGridView();
             this.employeesAndDepartmentsDataGridView = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.employeesEarningOverDataGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.employeesGrpByDepartmentsDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.employeesAndDepartmentsDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -93,14 +93,15 @@
             this.label3.TabIndex = 3;
             this.label3.Text = "Employees Grouped By Department";
             // 
-            // button2
+            // employeesGrpByDepartmentsButton
             // 
-            this.button2.Location = new System.Drawing.Point(317, 320);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(268, 29);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Submit";
-            this.button2.UseVisualStyleBackColor = true;
+            this.employeesGrpByDepartmentsButton.Location = new System.Drawing.Point(317, 320);
+            this.employeesGrpByDepartmentsButton.Name = "employeesGrpByDepartmentsButton";
+            this.employeesGrpByDepartmentsButton.Size = new System.Drawing.Size(268, 29);
+            this.employeesGrpByDepartmentsButton.TabIndex = 2;
+            this.employeesGrpByDepartmentsButton.Text = "Submit";
+            this.employeesGrpByDepartmentsButton.UseVisualStyleBackColor = true;
+            this.employeesGrpByDepartmentsButton.Click += new System.EventHandler(this.employeesGrpByDepartmentsButton_Click);
             // 
             // label4
             // 
@@ -160,15 +161,15 @@
             this.employeesEarningOverDataGridView.TabIndex = 5;
             this.employeesEarningOverDataGridView.Text = "dataGridView1";
             // 
-            // dataGridView1
+            // employeesGrpByDepartmentsDataGridView
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(317, 36);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(268, 273);
-            this.dataGridView1.TabIndex = 6;
-            this.dataGridView1.Text = "dataGridView1";
+            this.employeesGrpByDepartmentsDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.employeesGrpByDepartmentsDataGridView.Location = new System.Drawing.Point(317, 36);
+            this.employeesGrpByDepartmentsDataGridView.Name = "employeesGrpByDepartmentsDataGridView";
+            this.employeesGrpByDepartmentsDataGridView.RowHeadersWidth = 51;
+            this.employeesGrpByDepartmentsDataGridView.Size = new System.Drawing.Size(268, 273);
+            this.employeesGrpByDepartmentsDataGridView.TabIndex = 6;
+            this.employeesGrpByDepartmentsDataGridView.Text = "dataGridView1";
             // 
             // employeesAndDepartmentsDataGridView
             // 
@@ -186,14 +187,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1416, 450);
             this.Controls.Add(this.employeesAndDepartmentsDataGridView);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.employeesGrpByDepartmentsDataGridView);
             this.Controls.Add(this.employeesEarningOverDataGridView);
             this.Controls.Add(this.listBox4);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.employeesAndDepartmentsButton);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.employeesGrpByDepartmentsButton);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -205,7 +206,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "View Functions";
             ((System.ComponentModel.ISupportInitialize)(this.employeesEarningOverDataGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.employeesGrpByDepartmentsDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.employeesAndDepartmentsDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -218,14 +219,14 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button employeesGrpByDepartmentsButton;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button employeesAndDepartmentsButton;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.ListBox listBox4;
         private System.Windows.Forms.DataGridView employeesEarningOverDataGridView;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView employeesGrpByDepartmentsDataGridView;
         private System.Windows.Forms.DataGridView employeesAndDepartmentsDataGridView;
     }
 }

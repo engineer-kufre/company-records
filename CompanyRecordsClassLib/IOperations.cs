@@ -12,7 +12,7 @@ namespace CompanyRecordsClassLib
         bool UpdateEmployee(string firstName, string lastName, string email, string phoneNumber, decimal salary, int departmentId);
         List<AnonType> EmployeesEarningOver(decimal salary);
         List<EmpAndDeptAnonType> AllEmployeesAndDepartmentNames();
-        IEnumerable<IGrouping<string, Employee>> AllEmployeesGroupedByDepartment();
+        List<EmpAndDeptAnonType> AllEmployeesGroupedByDepartment();
         List<Department> AllDepartmentsWithNoEmployee();
         List<Employee> AllEmployeesAndAllDepartments();
     }

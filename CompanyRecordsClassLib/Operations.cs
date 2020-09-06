@@ -149,16 +149,24 @@ namespace CompanyRecordsClassLib
             return allEmployees;
         }
 
-        public IEnumerable<IGrouping<string, Employee>> AllEmployeesGroupedByDepartment()
+        public List<EmpAndDeptAnonType> AllEmployeesGroupedByDepartment()
         {
             CompanyRecordsContext context = new CompanyRecordsContext();
 
+            //var recs = context.Employees
+            //                           .Include(e => e.Department)
+            //                           .ToList()
+            //                           .OrderBy(d => d.Department.DepartmentName)
+            //                           .ThenBy(d => d.FirstName)
+            //                           .GroupBy(d => d.Department.DepartmentName);
+            //return recs;
+
             var recs = context.Employees
                                        .Include(e => e.Department)
-                                       .ToList()
                                        .OrderBy(d => d.Department.DepartmentName)
                                        .ThenBy(d => d.FirstName)
-                                       .GroupBy(d => d.Department.DepartmentName);
+                                       .Select(e => new EmpAndDeptAnonType(e.FirstName, e.LastName, e.Department.DepartmentName))
+                                       .ToList();
             return recs;
         }
 
