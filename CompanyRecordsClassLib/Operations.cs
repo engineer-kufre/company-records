@@ -142,44 +142,36 @@ namespace CompanyRecordsClassLib
         {
             CompanyRecordsContext context = new CompanyRecordsContext();
 
-            var allEmployees = context.Employees
+            var result = context.Employees
                                                     .Include(e => e.Department)
                                                     .Select(e => new EmpAndDeptAnonType(e.FirstName, e.LastName, e.Department.DepartmentName))
                                                     .ToList();
-            return allEmployees;
+            return result;
         }
 
         public List<EmpAndDeptAnonType> AllEmployeesGroupedByDepartment()
         {
             CompanyRecordsContext context = new CompanyRecordsContext();
 
-            //var recs = context.Employees
-            //                           .Include(e => e.Department)
-            //                           .ToList()
-            //                           .OrderBy(d => d.Department.DepartmentName)
-            //                           .ThenBy(d => d.FirstName)
-            //                           .GroupBy(d => d.Department.DepartmentName);
-            //return recs;
-
-            var recs = context.Employees
+            var result = context.Employees
                                        .Include(e => e.Department)
                                        .OrderBy(d => d.Department.DepartmentName)
                                        .ThenBy(d => d.FirstName)
                                        .Select(e => new EmpAndDeptAnonType(e.FirstName, e.LastName, e.Department.DepartmentName))
                                        .ToList();
-            return recs;
+            return result;
         }
 
         public List<AnonType> EmployeesEarningOver(decimal salary)
         {
             CompanyRecordsContext context = new CompanyRecordsContext();
 
-            var above = context.Employees
+            var result = context.Employees
                                          .Include(e => e.Department)
                                          .Where(e => e.Salary > salary)
                                          .Select(e => new AnonType(e.FirstName, e.LastName, e.Department.DepartmentName, e.Salary))
                                          .ToList();
-            return above;
+            return result;
         }
     }
 }
