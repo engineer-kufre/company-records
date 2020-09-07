@@ -37,15 +37,18 @@
             this.label4 = new System.Windows.Forms.Label();
             this.employeesAndDepartmentsButton = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
-            this.button4 = new System.Windows.Forms.Button();
-            this.employeesEarningOverDataGridView = new System.Windows.Forms.DataGridView();
+            this.deptsNoEmpsButton = new System.Windows.Forms.Button();
             this.employeesGrpByDepartmentsDataGridView = new System.Windows.Forms.DataGridView();
             this.employeesAndDepartmentsDataGridView = new System.Windows.Forms.DataGridView();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.employeesEarningOverDataGridView)).BeginInit();
+            this.employeesEarningOverDataGridView = new System.Windows.Forms.DataGridView();
+            this.deptsNoEmpsListBox = new System.Windows.Forms.ListBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.allEmpsAndAllDeptsButton = new System.Windows.Forms.Button();
+            this.allEmpsAndAllDeptsDataGridView = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.employeesGrpByDepartmentsDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.employeesAndDepartmentsDataGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.employeesEarningOverDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.allEmpsAndAllDeptsDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // thresholdTextBox
@@ -116,7 +119,7 @@
             // 
             // employeesAndDepartmentsButton
             // 
-            this.employeesAndDepartmentsButton.Location = new System.Drawing.Point(692, 673);
+            this.employeesAndDepartmentsButton.Location = new System.Drawing.Point(692, 644);
             this.employeesAndDepartmentsButton.Name = "employeesAndDepartmentsButton";
             this.employeesAndDepartmentsButton.Size = new System.Drawing.Size(387, 29);
             this.employeesAndDepartmentsButton.TabIndex = 2;
@@ -134,24 +137,15 @@
             this.label5.TabIndex = 3;
             this.label5.Text = "Departments With No Employees";
             // 
-            // button4
+            // deptsNoEmpsButton
             // 
-            this.button4.Location = new System.Drawing.Point(1194, 285);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(268, 29);
-            this.button4.TabIndex = 2;
-            this.button4.Text = "Submit";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // employeesEarningOverDataGridView
-            // 
-            this.employeesEarningOverDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.employeesEarningOverDataGridView.Location = new System.Drawing.Point(13, 36);
-            this.employeesEarningOverDataGridView.Name = "employeesEarningOverDataGridView";
-            this.employeesEarningOverDataGridView.RowHeadersWidth = 51;
-            this.employeesEarningOverDataGridView.Size = new System.Drawing.Size(576, 244);
-            this.employeesEarningOverDataGridView.TabIndex = 5;
-            this.employeesEarningOverDataGridView.Text = "dataGridView1";
+            this.deptsNoEmpsButton.Location = new System.Drawing.Point(1194, 285);
+            this.deptsNoEmpsButton.Name = "deptsNoEmpsButton";
+            this.deptsNoEmpsButton.Size = new System.Drawing.Size(268, 29);
+            this.deptsNoEmpsButton.TabIndex = 2;
+            this.deptsNoEmpsButton.Text = "Submit";
+            this.deptsNoEmpsButton.UseVisualStyleBackColor = true;
+            this.deptsNoEmpsButton.Click += new System.EventHandler(this.deptsNoEmpsButton_Click);
             // 
             // employeesGrpByDepartmentsDataGridView
             // 
@@ -169,30 +163,73 @@
             this.employeesAndDepartmentsDataGridView.Location = new System.Drawing.Point(663, 394);
             this.employeesAndDepartmentsDataGridView.Name = "employeesAndDepartmentsDataGridView";
             this.employeesAndDepartmentsDataGridView.RowHeadersWidth = 51;
-            this.employeesAndDepartmentsDataGridView.Size = new System.Drawing.Size(454, 273);
+            this.employeesAndDepartmentsDataGridView.Size = new System.Drawing.Size(454, 244);
             this.employeesAndDepartmentsDataGridView.TabIndex = 7;
             this.employeesAndDepartmentsDataGridView.Text = "dataGridView2";
             // 
-            // dataGridView1
+            // employeesEarningOverDataGridView
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(1194, 36);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(268, 244);
-            this.dataGridView1.TabIndex = 8;
-            this.dataGridView1.Text = "dataGridView1";
+            this.employeesEarningOverDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.employeesEarningOverDataGridView.Location = new System.Drawing.Point(13, 36);
+            this.employeesEarningOverDataGridView.Name = "employeesEarningOverDataGridView";
+            this.employeesEarningOverDataGridView.RowHeadersWidth = 51;
+            this.employeesEarningOverDataGridView.Size = new System.Drawing.Size(576, 244);
+            this.employeesEarningOverDataGridView.TabIndex = 5;
+            this.employeesEarningOverDataGridView.Text = "dataGridView1";
+            // 
+            // deptsNoEmpsListBox
+            // 
+            this.deptsNoEmpsListBox.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.deptsNoEmpsListBox.FormattingEnabled = true;
+            this.deptsNoEmpsListBox.ItemHeight = 23;
+            this.deptsNoEmpsListBox.Location = new System.Drawing.Point(1194, 36);
+            this.deptsNoEmpsListBox.Name = "deptsNoEmpsListBox";
+            this.deptsNoEmpsListBox.Size = new System.Drawing.Size(268, 211);
+            this.deptsNoEmpsListBox.TabIndex = 9;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.label6.Location = new System.Drawing.Point(13, 371);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(462, 20);
+            this.label6.TabIndex = 3;
+            this.label6.Text = "All Employees And All Departments(Assigned And Unassigned)";
+            // 
+            // allEmpsAndAllDeptsButton
+            // 
+            this.allEmpsAndAllDeptsButton.Location = new System.Drawing.Point(42, 642);
+            this.allEmpsAndAllDeptsButton.Name = "allEmpsAndAllDeptsButton";
+            this.allEmpsAndAllDeptsButton.Size = new System.Drawing.Size(387, 29);
+            this.allEmpsAndAllDeptsButton.TabIndex = 2;
+            this.allEmpsAndAllDeptsButton.Text = "Submit";
+            this.allEmpsAndAllDeptsButton.UseVisualStyleBackColor = true;
+            this.allEmpsAndAllDeptsButton.Click += new System.EventHandler(this.allEmpsAndAllDeptsButton_Click);
+            // 
+            // allEmpsAndAllDeptsDataGridView
+            // 
+            this.allEmpsAndAllDeptsDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.allEmpsAndAllDeptsDataGridView.Location = new System.Drawing.Point(13, 394);
+            this.allEmpsAndAllDeptsDataGridView.Name = "allEmpsAndAllDeptsDataGridView";
+            this.allEmpsAndAllDeptsDataGridView.RowHeadersWidth = 51;
+            this.allEmpsAndAllDeptsDataGridView.Size = new System.Drawing.Size(454, 244);
+            this.allEmpsAndAllDeptsDataGridView.TabIndex = 6;
+            this.allEmpsAndAllDeptsDataGridView.Text = "dataGridView1";
             // 
             // ViewFunctions
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1571, 789);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.allEmpsAndAllDeptsDataGridView);
+            this.Controls.Add(this.allEmpsAndAllDeptsButton);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.deptsNoEmpsListBox);
             this.Controls.Add(this.employeesAndDepartmentsDataGridView);
             this.Controls.Add(this.employeesGrpByDepartmentsDataGridView);
             this.Controls.Add(this.employeesEarningOverDataGridView);
-            this.Controls.Add(this.button4);
+            this.Controls.Add(this.deptsNoEmpsButton);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.employeesAndDepartmentsButton);
             this.Controls.Add(this.label4);
@@ -207,10 +244,10 @@
             this.Name = "ViewFunctions";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "View Functions";
-            ((System.ComponentModel.ISupportInitialize)(this.employeesEarningOverDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.employeesGrpByDepartmentsDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.employeesAndDepartmentsDataGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.employeesEarningOverDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.allEmpsAndAllDeptsDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -226,10 +263,13 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button employeesAndDepartmentsButton;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button deptsNoEmpsButton;
         private System.Windows.Forms.DataGridView employeesEarningOverDataGridView;
         private System.Windows.Forms.DataGridView employeesGrpByDepartmentsDataGridView;
         private System.Windows.Forms.DataGridView employeesAndDepartmentsDataGridView;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.ListBox deptsNoEmpsListBox;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button allEmpsAndAllDeptsButton;
+        private System.Windows.Forms.DataGridView allEmpsAndAllDeptsDataGridView;
     }
 }

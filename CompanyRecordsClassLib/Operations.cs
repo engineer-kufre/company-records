@@ -128,14 +128,26 @@ namespace CompanyRecordsClassLib
             }
         }
 
-        public List<Department> AllDepartmentsWithNoEmployee()
+        public List<string> AllDepartmentsWithNoEmployee()
         {
-            throw new NotImplementedException();
+            CompanyRecordsContext context = new CompanyRecordsContext();
+            string sql = "Select Employees.Email, Employees.DepartmentId, Departments.DepartmentName from Employees Full Outer Join Departments On Employees.DepartmentId = Departments.DepartmentId where Employees.Email is NULL";
+            var result = context.Departments
+                                        .FromSqlRaw(sql)
+                                        .Select(e => e.DepartmentName)
+                                        .ToList();
+            return result;
         }
 
-        public List<Employee> AllEmployeesAndAllDepartments()
+        public List<EmpAndDeptAnonType> AllEmployeesAndAllDepartments()
         {
-            throw new NotImplementedException();
+            CompanyRecordsContext context = new CompanyRecordsContext();
+            string sql = "Select Employees.FirstName, Employees.DepartmentId, Employees.LastName, Departments.DepartmentName from Employees Right Join Departments On Employees.DepartmentId = Departments.DepartmentId";
+            var result = context.Employees
+                                        .FromSqlRaw(sql)
+                                        .Select(e => new EmpAndDeptAnonType(e.FirstName, e.LastName, e.Department.DepartmentName))
+                                        .ToList();
+            return result;
         }
 
         public List<EmpAndDeptAnonType> AllEmployeesAndDepartmentNames()
@@ -143,9 +155,9 @@ namespace CompanyRecordsClassLib
             CompanyRecordsContext context = new CompanyRecordsContext();
 
             var result = context.Employees
-                                                    .Include(e => e.Department)
-                                                    .Select(e => new EmpAndDeptAnonType(e.FirstName, e.LastName, e.Department.DepartmentName))
-                                                    .ToList();
+                                        .Include(e => e.Department)
+                                        .Select(e => new EmpAndDeptAnonType(e.FirstName, e.LastName, e.Department.DepartmentName))
+                                        .ToList();
             return result;
         }
 

@@ -13,7 +13,7 @@ namespace CompanyRecordsClassLib
         List<AnonType> EmployeesEarningOver(decimal salary);
         List<EmpAndDeptAnonType> AllEmployeesAndDepartmentNames();
         List<EmpAndDeptAnonType> AllEmployeesGroupedByDepartment();
-        List<Department> AllDepartmentsWithNoEmployee();
-        List<Employee> AllEmployeesAndAllDepartments();
+        List<string> AllDepartmentsWithNoEmployee();
+        List<EmpAndDeptAnonType> AllEmployeesAndAllDepartments();
     }
 }
