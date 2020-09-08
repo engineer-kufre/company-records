@@ -53,26 +53,29 @@
             // 
             // thresholdTextBox
             // 
-            this.thresholdTextBox.Location = new System.Drawing.Point(92, 286);
+            this.thresholdTextBox.Location = new System.Drawing.Point(159, 286);
             this.thresholdTextBox.Name = "thresholdTextBox";
             this.thresholdTextBox.Size = new System.Drawing.Size(223, 27);
             this.thresholdTextBox.TabIndex = 1;
             // 
             // employeesEarningOverButton
             // 
-            this.employeesEarningOverButton.Location = new System.Drawing.Point(321, 284);
+            this.employeesEarningOverButton.BackColor = System.Drawing.Color.RoyalBlue;
+            this.employeesEarningOverButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.employeesEarningOverButton.ForeColor = System.Drawing.Color.White;
+            this.employeesEarningOverButton.Location = new System.Drawing.Point(388, 284);
             this.employeesEarningOverButton.Name = "employeesEarningOverButton";
             this.employeesEarningOverButton.Size = new System.Drawing.Size(268, 29);
             this.employeesEarningOverButton.TabIndex = 2;
             this.employeesEarningOverButton.Text = "Submit";
-            this.employeesEarningOverButton.UseVisualStyleBackColor = true;
+            this.employeesEarningOverButton.UseVisualStyleBackColor = false;
             this.employeesEarningOverButton.Click += new System.EventHandler(this.employeesEarningOverButton_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(154, 13);
+            this.label1.Location = new System.Drawing.Point(221, 13);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(268, 20);
             this.label1.TabIndex = 3;
@@ -81,7 +84,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 289);
+            this.label2.Location = new System.Drawing.Point(79, 289);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(74, 20);
             this.label2.TabIndex = 4;
@@ -91,7 +94,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(750, 13);
+            this.label3.Location = new System.Drawing.Point(804, 13);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(262, 20);
             this.label3.TabIndex = 3;
@@ -99,19 +102,22 @@
             // 
             // employeesGrpByDepartmentsButton
             // 
-            this.employeesGrpByDepartmentsButton.Location = new System.Drawing.Point(692, 284);
+            this.employeesGrpByDepartmentsButton.BackColor = System.Drawing.Color.RoyalBlue;
+            this.employeesGrpByDepartmentsButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.employeesGrpByDepartmentsButton.ForeColor = System.Drawing.Color.White;
+            this.employeesGrpByDepartmentsButton.Location = new System.Drawing.Point(746, 284);
             this.employeesGrpByDepartmentsButton.Name = "employeesGrpByDepartmentsButton";
             this.employeesGrpByDepartmentsButton.Size = new System.Drawing.Size(387, 29);
             this.employeesGrpByDepartmentsButton.TabIndex = 2;
             this.employeesGrpByDepartmentsButton.Text = "Submit";
-            this.employeesGrpByDepartmentsButton.UseVisualStyleBackColor = true;
+            this.employeesGrpByDepartmentsButton.UseVisualStyleBackColor = false;
             this.employeesGrpByDepartmentsButton.Click += new System.EventHandler(this.employeesGrpByDepartmentsButton_Click);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(756, 371);
+            this.label4.Location = new System.Drawing.Point(593, 391);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(256, 20);
             this.label4.TabIndex = 3;
@@ -119,19 +125,22 @@
             // 
             // employeesAndDepartmentsButton
             // 
-            this.employeesAndDepartmentsButton.Location = new System.Drawing.Point(692, 644);
+            this.employeesAndDepartmentsButton.BackColor = System.Drawing.Color.RoyalBlue;
+            this.employeesAndDepartmentsButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.employeesAndDepartmentsButton.ForeColor = System.Drawing.Color.White;
+            this.employeesAndDepartmentsButton.Location = new System.Drawing.Point(529, 664);
             this.employeesAndDepartmentsButton.Name = "employeesAndDepartmentsButton";
             this.employeesAndDepartmentsButton.Size = new System.Drawing.Size(387, 29);
             this.employeesAndDepartmentsButton.TabIndex = 2;
             this.employeesAndDepartmentsButton.Text = "Submit";
-            this.employeesAndDepartmentsButton.UseVisualStyleBackColor = true;
+            this.employeesAndDepartmentsButton.UseVisualStyleBackColor = false;
             this.employeesAndDepartmentsButton.Click += new System.EventHandler(this.employeesAndDepartmentsButton_Click);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(1206, 12);
+            this.label5.Location = new System.Drawing.Point(998, 390);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(246, 20);
             this.label5.TabIndex = 3;
@@ -139,18 +148,21 @@
             // 
             // deptsNoEmpsButton
             // 
-            this.deptsNoEmpsButton.Location = new System.Drawing.Point(1194, 285);
+            this.deptsNoEmpsButton.BackColor = System.Drawing.Color.RoyalBlue;
+            this.deptsNoEmpsButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.deptsNoEmpsButton.ForeColor = System.Drawing.Color.White;
+            this.deptsNoEmpsButton.Location = new System.Drawing.Point(986, 663);
             this.deptsNoEmpsButton.Name = "deptsNoEmpsButton";
             this.deptsNoEmpsButton.Size = new System.Drawing.Size(268, 29);
             this.deptsNoEmpsButton.TabIndex = 2;
             this.deptsNoEmpsButton.Text = "Submit";
-            this.deptsNoEmpsButton.UseVisualStyleBackColor = true;
+            this.deptsNoEmpsButton.UseVisualStyleBackColor = false;
             this.deptsNoEmpsButton.Click += new System.EventHandler(this.deptsNoEmpsButton_Click);
             // 
             // employeesGrpByDepartmentsDataGridView
             // 
             this.employeesGrpByDepartmentsDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.employeesGrpByDepartmentsDataGridView.Location = new System.Drawing.Point(663, 36);
+            this.employeesGrpByDepartmentsDataGridView.Location = new System.Drawing.Point(717, 36);
             this.employeesGrpByDepartmentsDataGridView.Name = "employeesGrpByDepartmentsDataGridView";
             this.employeesGrpByDepartmentsDataGridView.RowHeadersWidth = 51;
             this.employeesGrpByDepartmentsDataGridView.Size = new System.Drawing.Size(454, 244);
@@ -160,7 +172,7 @@
             // employeesAndDepartmentsDataGridView
             // 
             this.employeesAndDepartmentsDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.employeesAndDepartmentsDataGridView.Location = new System.Drawing.Point(663, 394);
+            this.employeesAndDepartmentsDataGridView.Location = new System.Drawing.Point(500, 414);
             this.employeesAndDepartmentsDataGridView.Name = "employeesAndDepartmentsDataGridView";
             this.employeesAndDepartmentsDataGridView.RowHeadersWidth = 51;
             this.employeesAndDepartmentsDataGridView.Size = new System.Drawing.Size(454, 244);
@@ -170,7 +182,7 @@
             // employeesEarningOverDataGridView
             // 
             this.employeesEarningOverDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.employeesEarningOverDataGridView.Location = new System.Drawing.Point(13, 36);
+            this.employeesEarningOverDataGridView.Location = new System.Drawing.Point(80, 36);
             this.employeesEarningOverDataGridView.Name = "employeesEarningOverDataGridView";
             this.employeesEarningOverDataGridView.RowHeadersWidth = 51;
             this.employeesEarningOverDataGridView.Size = new System.Drawing.Size(576, 244);
@@ -182,7 +194,7 @@
             this.deptsNoEmpsListBox.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.deptsNoEmpsListBox.FormattingEnabled = true;
             this.deptsNoEmpsListBox.ItemHeight = 23;
-            this.deptsNoEmpsListBox.Location = new System.Drawing.Point(1194, 36);
+            this.deptsNoEmpsListBox.Location = new System.Drawing.Point(986, 414);
             this.deptsNoEmpsListBox.Name = "deptsNoEmpsListBox";
             this.deptsNoEmpsListBox.Size = new System.Drawing.Size(268, 211);
             this.deptsNoEmpsListBox.TabIndex = 9;
@@ -191,7 +203,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(13, 371);
+            this.label6.Location = new System.Drawing.Point(13, 391);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(462, 20);
             this.label6.TabIndex = 3;
@@ -199,18 +211,21 @@
             // 
             // allEmpsAndAllDeptsButton
             // 
-            this.allEmpsAndAllDeptsButton.Location = new System.Drawing.Point(42, 642);
+            this.allEmpsAndAllDeptsButton.BackColor = System.Drawing.Color.RoyalBlue;
+            this.allEmpsAndAllDeptsButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.allEmpsAndAllDeptsButton.ForeColor = System.Drawing.Color.White;
+            this.allEmpsAndAllDeptsButton.Location = new System.Drawing.Point(42, 662);
             this.allEmpsAndAllDeptsButton.Name = "allEmpsAndAllDeptsButton";
             this.allEmpsAndAllDeptsButton.Size = new System.Drawing.Size(387, 29);
             this.allEmpsAndAllDeptsButton.TabIndex = 2;
             this.allEmpsAndAllDeptsButton.Text = "Submit";
-            this.allEmpsAndAllDeptsButton.UseVisualStyleBackColor = true;
+            this.allEmpsAndAllDeptsButton.UseVisualStyleBackColor = false;
             this.allEmpsAndAllDeptsButton.Click += new System.EventHandler(this.allEmpsAndAllDeptsButton_Click);
             // 
             // allEmpsAndAllDeptsDataGridView
             // 
             this.allEmpsAndAllDeptsDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.allEmpsAndAllDeptsDataGridView.Location = new System.Drawing.Point(13, 394);
+            this.allEmpsAndAllDeptsDataGridView.Location = new System.Drawing.Point(13, 414);
             this.allEmpsAndAllDeptsDataGridView.Name = "allEmpsAndAllDeptsDataGridView";
             this.allEmpsAndAllDeptsDataGridView.RowHeadersWidth = 51;
             this.allEmpsAndAllDeptsDataGridView.Size = new System.Drawing.Size(454, 244);
@@ -221,7 +236,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1571, 789);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(188)))), ((int)(((byte)(225)))));
+            this.ClientSize = new System.Drawing.Size(1269, 723);
             this.Controls.Add(this.allEmpsAndAllDeptsDataGridView);
             this.Controls.Add(this.allEmpsAndAllDeptsButton);
             this.Controls.Add(this.label6);

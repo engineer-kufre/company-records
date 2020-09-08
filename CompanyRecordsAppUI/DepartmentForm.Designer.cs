@@ -52,28 +52,35 @@
             // 
             // createDeptButton
             // 
+            this.createDeptButton.BackColor = System.Drawing.Color.Green;
+            this.createDeptButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.createDeptButton.ForeColor = System.Drawing.Color.White;
             this.createDeptButton.Location = new System.Drawing.Point(13, 64);
             this.createDeptButton.Name = "createDeptButton";
             this.createDeptButton.Size = new System.Drawing.Size(170, 29);
             this.createDeptButton.TabIndex = 2;
             this.createDeptButton.Text = "Create";
-            this.createDeptButton.UseVisualStyleBackColor = true;
+            this.createDeptButton.UseVisualStyleBackColor = false;
             this.createDeptButton.Click += new System.EventHandler(this.createDeptButton_Click);
             // 
             // deleteDeptButton
             // 
+            this.deleteDeptButton.BackColor = System.Drawing.Color.Red;
+            this.deleteDeptButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.deleteDeptButton.ForeColor = System.Drawing.Color.White;
             this.deleteDeptButton.Location = new System.Drawing.Point(189, 64);
             this.deleteDeptButton.Name = "deleteDeptButton";
             this.deleteDeptButton.Size = new System.Drawing.Size(173, 29);
             this.deleteDeptButton.TabIndex = 2;
             this.deleteDeptButton.Text = "Delete";
-            this.deleteDeptButton.UseVisualStyleBackColor = true;
+            this.deleteDeptButton.UseVisualStyleBackColor = false;
             this.deleteDeptButton.Click += new System.EventHandler(this.deleteDeptButton_Click);
             // 
             // DepartmentForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(188)))), ((int)(((byte)(225)))));
             this.ClientSize = new System.Drawing.Size(374, 110);
             this.Controls.Add(this.deleteDeptButton);
             this.Controls.Add(this.createDeptButton);

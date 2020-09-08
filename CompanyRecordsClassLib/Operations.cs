@@ -6,8 +6,10 @@ using System.Linq;
 
 namespace CompanyRecordsClassLib
 {
+    //this class drives all app functionalities by implementing the IOperations inteface
     public class Operations : IOperations
     {
+        //method for adding a new department to the database
         public bool CreateNewDepartment(string departmentName)
         {
             try
@@ -29,6 +31,7 @@ namespace CompanyRecordsClassLib
             }
         }
 
+        //method for adding a new employee to the database
         public bool CreateNewEmployee(string firstName, string lastName, string email, string phoneNumber, decimal salary, int departmentId)
         {
             try
@@ -55,6 +58,7 @@ namespace CompanyRecordsClassLib
             }
         }
 
+        //method for editing an existing employee
         public bool UpdateEmployee(string firstname, string lastname, string email, string phoneNumber, decimal salary, int departmentId)
         {
             try
@@ -92,13 +96,14 @@ namespace CompanyRecordsClassLib
             }
         }
 
+        //method for deleting an existing department
         public bool DeleteDepartment(string departmentName)
         {
             try
             {
                 CompanyRecordsContext context = new CompanyRecordsContext();
                 var department = context.Departments.Where(d => d.DepartmentName == departmentName)
-                                                              .ToArray()[0];
+                                                                         .ToArray()[0];
                 context.Departments.Remove(department);
                 context.SaveChanges();
 
@@ -110,6 +115,7 @@ namespace CompanyRecordsClassLib
             }
         }
 
+        //method for deleting an existing employee
         public bool DeleteEmployee(string firstname, string email)
         {
             try
@@ -128,6 +134,7 @@ namespace CompanyRecordsClassLib
             }
         }
 
+        //method returns a list of names of departments with no employees
         public List<string> AllDepartmentsWithNoEmployee()
         {
             CompanyRecordsContext context = new CompanyRecordsContext();
@@ -139,6 +146,7 @@ namespace CompanyRecordsClassLib
             return result;
         }
 
+        //method returns a list of all employees and all departments (assigned or not assigned)
         public List<EmpAndDeptAnonType> AllEmployeesAndAllDepartments()
         {
             CompanyRecordsContext context = new CompanyRecordsContext();
@@ -150,6 +158,7 @@ namespace CompanyRecordsClassLib
             return result;
         }
 
+        //method returns a list of all assigned employees and their departments
         public List<EmpAndDeptAnonType> AllEmployeesAndDepartmentNames()
         {
             CompanyRecordsContext context = new CompanyRecordsContext();
@@ -161,6 +170,7 @@ namespace CompanyRecordsClassLib
             return result;
         }
 
+        //method returns a list of all assigned employees grouped by their departments
         public List<EmpAndDeptAnonType> AllEmployeesGroupedByDepartment()
         {
             CompanyRecordsContext context = new CompanyRecordsContext();
@@ -174,6 +184,7 @@ namespace CompanyRecordsClassLib
             return result;
         }
 
+        //method returns a list of all employees earning over an inputted threshold
         public List<AnonType> EmployeesEarningOver(decimal salary)
         {
             CompanyRecordsContext context = new CompanyRecordsContext();

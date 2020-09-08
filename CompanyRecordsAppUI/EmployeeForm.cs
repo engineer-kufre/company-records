@@ -18,6 +18,7 @@ namespace CompanyRecordsAppUI
             Operations = operations;
         }
 
+        //click event to create a new employee
         private void createEmpButton_Click(object sender, EventArgs e)
         {
             string firstName = firstNameTextBox.Text;
@@ -62,6 +63,7 @@ namespace CompanyRecordsAppUI
             }
         }
 
+        //click event to update an existing employee
         private void updateEmpButton_Click(object sender, EventArgs e)
         {
             string firstName = firstNameTextBox.Text;
@@ -104,6 +106,7 @@ namespace CompanyRecordsAppUI
             }
         }
 
+        //click event to delete an existing employee
         private void deleteEmpButton_Click(object sender, EventArgs e)
         {
             string firstName = firstNameTextBox.Text;

@@ -3,6 +3,7 @@ using System.Linq;
 
 namespace CompanyRecordsClassLib
 {
+    //the IOperations interface is implemented by the Operations class
     public interface IOperations
     {
         bool CreateNewEmployee(string firstname, string lastname, string email, string phoneNumber, decimal salary, int departmentId);

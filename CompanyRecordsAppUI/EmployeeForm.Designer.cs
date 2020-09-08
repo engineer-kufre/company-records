@@ -143,38 +143,48 @@
             // 
             // deleteEmpButton
             // 
+            this.deleteEmpButton.BackColor = System.Drawing.Color.Red;
+            this.deleteEmpButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.deleteEmpButton.ForeColor = System.Drawing.Color.White;
             this.deleteEmpButton.Location = new System.Drawing.Point(274, 221);
             this.deleteEmpButton.Name = "deleteEmpButton";
             this.deleteEmpButton.Size = new System.Drawing.Size(127, 29);
             this.deleteEmpButton.TabIndex = 7;
             this.deleteEmpButton.Text = "Delete";
-            this.deleteEmpButton.UseVisualStyleBackColor = true;
+            this.deleteEmpButton.UseVisualStyleBackColor = false;
             this.deleteEmpButton.Click += new System.EventHandler(this.deleteEmpButton_Click);
             // 
             // createEmpButton
             // 
+            this.createEmpButton.BackColor = System.Drawing.Color.Green;
+            this.createEmpButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.createEmpButton.ForeColor = System.Drawing.Color.White;
             this.createEmpButton.Location = new System.Drawing.Point(13, 221);
             this.createEmpButton.Name = "createEmpButton";
             this.createEmpButton.Size = new System.Drawing.Size(127, 29);
             this.createEmpButton.TabIndex = 7;
             this.createEmpButton.Text = "Create";
-            this.createEmpButton.UseVisualStyleBackColor = true;
+            this.createEmpButton.UseVisualStyleBackColor = false;
             this.createEmpButton.Click += new System.EventHandler(this.createEmpButton_Click);
             // 
             // updateEmpButton
             // 
+            this.updateEmpButton.BackColor = System.Drawing.Color.RoyalBlue;
+            this.updateEmpButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.updateEmpButton.ForeColor = System.Drawing.Color.White;
             this.updateEmpButton.Location = new System.Drawing.Point(144, 221);
             this.updateEmpButton.Name = "updateEmpButton";
             this.updateEmpButton.Size = new System.Drawing.Size(127, 29);
             this.updateEmpButton.TabIndex = 7;
             this.updateEmpButton.Text = "Update";
-            this.updateEmpButton.UseVisualStyleBackColor = true;
+            this.updateEmpButton.UseVisualStyleBackColor = false;
             this.updateEmpButton.Click += new System.EventHandler(this.updateEmpButton_Click);
             // 
             // EmployeeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(188)))), ((int)(((byte)(225)))));
             this.ClientSize = new System.Drawing.Size(420, 265);
             this.Controls.Add(this.updateEmpButton);
             this.Controls.Add(this.createEmpButton);

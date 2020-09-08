@@ -4,6 +4,7 @@ using System.Text;
 
 namespace CompanyRecordsClassLib
 {
+    //an employee and department hybrid object class
     public class EmpAndDeptAnonType
     {
         public string FirstName { get; set; }

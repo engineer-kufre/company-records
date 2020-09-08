@@ -13,12 +13,14 @@ namespace CompanyRecordsAppUI
             Operations = operations;
         }
 
+        //click event to create and show CRUD functions form
         private void crudFunctionsButton_Click(object sender, EventArgs e)
         {
             CRUDFunctions crudFunctions = new CRUDFunctions(Operations);
             crudFunctions.Show();
         }
 
+        //click event to create and show View functions form
         private void viewFunctionsButton_Click(object sender, EventArgs e)
         {
             ViewFunctions viewFunctions = new ViewFunctions(Operations);

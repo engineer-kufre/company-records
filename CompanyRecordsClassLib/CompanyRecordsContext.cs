@@ -2,6 +2,7 @@
 
 namespace CompanyRecordsClassLib
 {
+    //the context class implements DBContext interface
     class CompanyRecordsContext : DbContext
     {
         public DbSet<Employee> Employees { get; set; }

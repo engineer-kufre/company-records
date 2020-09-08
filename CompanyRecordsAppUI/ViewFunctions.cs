@@ -18,6 +18,7 @@ namespace CompanyRecordsAppUI
             Operations = operations;
         }
 
+        //click event displays all employees earning above the inputted threshold
         private void employeesEarningOverButton_Click(object sender, EventArgs e)
         {
             try
@@ -33,18 +34,21 @@ namespace CompanyRecordsAppUI
             }
         }
 
+        //click event displays all employees and their assigned departments
         private void employeesAndDepartmentsButton_Click(object sender, EventArgs e)
         {
             var resultList = Operations.AllEmployeesAndDepartmentNames();
             employeesAndDepartmentsDataGridView.DataSource = resultList;
         }
 
+        //click event displays all employees grouped by their assigned departments
         private void employeesGrpByDepartmentsButton_Click(object sender, EventArgs e)
         {
             var resultList = Operations.AllEmployeesGroupedByDepartment();
             employeesGrpByDepartmentsDataGridView.DataSource = resultList;
         }
 
+        //click event displays all departments with no employees
         private void deptsNoEmpsButton_Click(object sender, EventArgs e)
         {
             var resultList = Operations.AllDepartmentsWithNoEmployee();
@@ -52,6 +56,7 @@ namespace CompanyRecordsAppUI
             deptsNoEmpsListBox.DisplayMember = "Department";
         }
 
+        //click event displays all employees and all departments
         private void allEmpsAndAllDeptsButton_Click(object sender, EventArgs e)
         {
             var resultlist = Operations.AllEmployeesAndAllDepartments();

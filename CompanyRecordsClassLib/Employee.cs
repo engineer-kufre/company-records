@@ -2,6 +2,7 @@
 
 namespace CompanyRecordsClassLib
 {
+    //the employee class
     public class Employee
     {
         public int EmployeeId { get; set; }

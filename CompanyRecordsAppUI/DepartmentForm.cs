@@ -12,6 +12,7 @@ namespace CompanyRecordsAppUI
             Operations = operations;
         }
 
+        //click event to create a new department
         private void createDeptButton_Click(object sender, System.EventArgs e)
         {
             string departmentName = departmentTextBox.Text;
@@ -27,6 +28,7 @@ namespace CompanyRecordsAppUI
             }
         }
 
+        //click event to delete an existing department
         private void deleteDeptButton_Click(object sender, System.EventArgs e)
         {
             string departmentName = departmentTextBox.Text;
