@@ -149,12 +149,9 @@ namespace CompanyRecordsClassLib
         //method returns a list of all employees and all departments (assigned or not assigned)
         public List<EmpAndDeptAnonType> AllEmployeesAndAllDepartments()
         {
-            CompanyRecordsContext context = new CompanyRecordsContext();
-            string sql = "Select Employees.FirstName, Employees.DepartmentId, Employees.LastName, Departments.DepartmentName from Employees Right Join Departments On Employees.DepartmentId = Departments.DepartmentId";
-            var result = context.Employees
-                                        .FromSqlRaw(sql)
-                                        .Select(e => new EmpAndDeptAnonType(e.FirstName, e.LastName, e.Department.DepartmentName))
-                                        .ToList();
+            var result = AllEmployeesAndDepartmentNames().Concat(AllDepartmentsWithNoEmployee()
+                                                                                    .Select(e => new EmpAndDeptAnonType("", "", e)))
+                                                                                    .ToList();
             return result;
         }
 
